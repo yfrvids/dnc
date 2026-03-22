@@ -113,6 +113,8 @@
         ```sh
         sudo apt-get install -y dotnet-runtime-10.0
         ```
+- Contruir con dotnet: `dotnet build`
+
 - **Integrated terminal** with <kbd>Ctrl</kbd> + <kbd>j</kbd>
 - **LSP server manager**, **DAP servers**, **linters** and **formatters** with ```:Mason```
 - A **file explorer tree** with <kbd>Ctrl</kbd> + <kbd>b</kbd>

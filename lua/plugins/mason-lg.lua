@@ -1,7 +1,9 @@
 require("mason-lspconfig").setup({
     ensure_installed = {
+        'csharp_ls',
+        'omnisharp',
         --'lua_ls',
-        'texlab',
+        --'texlab',
         --'pyright', -- Deltanvim Python LSP
         --'pylint', -- Deltanvim Python Linter
         --'black', -- Deltanvim Python Formatter #1

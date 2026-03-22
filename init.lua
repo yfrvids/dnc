@@ -26,7 +26,7 @@ require('plugins.lsplightbulbdeltanvim')
 --plugins
 require('plugins.toggleterminal')
 require('plugins.tree')
-require('plugins.treesitter')
+--require('plugins.treesitter')
 require('plugins.scrollbarnvim')
 require('plugins.gitsignsnvim')
 require('plugins.diagflownvim')

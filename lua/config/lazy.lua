@@ -61,10 +61,9 @@ local plugins = {
         end,
     },
     {
-        'seblyng/roslyn.nvim',
+        "seblyng/roslyn.nvim",
         ---@module 'roslyn.config'
         ---@type RoslynNvimConfig
-        ft = { "cs", "razor" },
         opts = {
             -- opciones
         },
