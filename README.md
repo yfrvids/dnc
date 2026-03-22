@@ -52,7 +52,7 @@
   <summary>🖥️ Windows</summary>
 
   - **Clone the repository** to the location ```AppData/Local/```
-  - From the terminal, **go to the AppData/Local/dnd/ folder**
+  - From the terminal, **go to the AppData/Local/dnc/ folder**
   - **Give permissions** to the install.ps1 file with ```Set-ExecutionPolicy Bypass -Scope Process -Force```, and **execute it** with ```.\install.ps1```
   - Restart the terminal
 
@@ -62,7 +62,7 @@
   <summary>💻 Linux</summary>
 
   - **Clone the repository** to the location ```.config/```
-  - From the terminal, **go to the .config/dnd/ folder**
+  - From the terminal, **go to the .config/dnc/ folder**
   - **Give permissions** to the install.sh file with ```chmod +x install.sh```, and **execute it** with ```./install```
   - Restart the terminal
   
@@ -76,7 +76,7 @@
 
 ### Linux (Ubuntu/Debian)
 - Install the Python venv module `sudo apt install python3.yourCurrentPythonVersion-venv`
-- Create the virtual environment inside the dnd folder: `python3 -m venv env` 
+- Create the virtual environment inside the dnc folder: `python3 -m venv env` 
 - Activate the virtual environment `source env/bin/activate`
 - Install additional requirements `pip install -r requirements.txt`
 
@@ -84,13 +84,13 @@
 
 ---
 
-- In the windows terminal **enter dnd** using ```dnd```
-- To **find the configuration folder for dnd** type from neovim ```:echo stdpath('config')```
+- In the windows terminal **enter dnc** using ```dnc```
+- To **find the configuration folder for dnc** type from neovim ```:echo stdpath('config')```
 - **Recommended font:** In the fonts folder there is a set of JetBrains fonts, from File Explorer select all fonts and right click on install. Then from the windows console configuration (powershell or cmd) go to the Profiles section and select Defaults, then select Appearance, and in the Font face box select a JetBrains font (**JetBrainsMono Nerd Font Mono** as a personal recommendation) **This font allows the display of icons for both folders and file type, and also for special characters** that aesthetically improve the visualization of the code. And finally click on save.
 
 # Features
 
-## dnd (DeltanvimDocs)
+## dnc (DeltanvimC)
 
 - En raiz `wget https://packages.microsoft.com/config/debian/yourDebianVersionLike13Or12OrEtc/packages-microsoft-prod.deb -O packages-microsoft-prod.deb`
 - Instala el .deb obtenido mediante: `sudo dpkg -i packages-microsoft-prod.deb` 
@@ -133,7 +133,7 @@
     $E = mc^2$
     
 <!-- - **Live server for Markdown files** 📝 with ```:MarkdownPreview```
-- **REPL interactive in dnd** 👨‍💻
+- **REPL interactive in dnc** 👨‍💻
     - windows (install wezterm terminal with Chocolatey in ADMIN modo ```choco install wezterm -y``` o desde su [sitio web](https://wezterm.org/))
     
     ### this configuration can be good for linux systems, because tmux is available on that operating system, so the default terminal would be tmux
@@ -154,9 +154,9 @@
 Error executing Lua callback: Vim:E475: Invalid value for argument cmd: 'deno' is not executable 
 stack traceback:                                                                                                    
         [C]: in function 'jobstart'                                                                                 
-        ...e/.local/share/dnd/lazy/peek.nvim/lua/peek/app.lua:53: in function 'init'                          
-        .../.local/share/dnd/lazy/peek.nvim/lua/peek/init.lua:23: in function 'open'                          
-        .../.local/share/dnd/lazy/peek.nvim/lua/peek/init.lua:113: in function <.../.local/share/dnd/lazy/peek.nvim/lua/peek/init.lua:104>
+        ...e/.local/share/dnc/lazy/peek.nvim/lua/peek/app.lua:53: in function 'init'                          
+        .../.local/share/dnc/lazy/peek.nvim/lua/peek/init.lua:23: in function 'open'                          
+        .../.local/share/dnc/lazy/peek.nvim/lua/peek/init.lua:113: in function <.../.local/share/dnc/lazy/peek.nvim/lua/peek/init.lua:104>
 ```
 
 **¿Cuando ocurre?<br>**
@@ -182,14 +182,14 @@ Ocurre cuando se quiere inicar el server de markdown mediante el comando :PeekOp
 </details>
 
 <details>
-<summary>Error: Peek error: error: Module not found "file:///home/yourUser/.local/share/dnd
+<summary>Error: Peek error: error: Module not found "file:///home/yourUser/.local/share/dnc
 /lazy/peek.nvim/public/main.bundle.js".                                         
 Press ENTER or type command to continue</summary><br>
 
 **Solution:***<br>
 
-1. Dirigirse al directorio peek.nvim mediante: ```cd ~/.local/share/dnd/lazy/peek.nvim```
+1. Dirigirse al directorio peek.nvim mediante: ```cd ~/.local/share/dnc/lazy/peek.nvim```
 
 2. Dentro del directorio peek.nvim ejecutar el siguiente comando: ```deno task --quiet build:fast```
 
-3. Reinstalar peek ingresando a dnd mediante el comando ```dnvim``` en la terminal mediante el comando ```:Lazy```
+3. Reinstalar peek ingresando a dnc mediante el comando ```dnvim``` en la terminal mediante el comando ```:Lazy```
