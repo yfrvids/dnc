@@ -1,0 +1,17 @@
+# bin/
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+.env
+.venv
+venv/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# node
+node_modules/

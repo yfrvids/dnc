@@ -1,0 +1,29 @@
+{
+    "name": "deltanvim",
+    "version": "1.1.4",
+    "scripts": {
+        "release": "release-it"
+    },
+    "release-it": {
+        "github": {
+            "release": true
+        },
+        "git": {
+            "commitMessage": "chore(release): v${version}",
+            "tagName": "v${version}"
+        },
+        "hooks": {
+            "after:bump": "npx conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md",
+            "after:release": "echo '🚀 Release exitoso!'"
+        },
+        "changelog": {
+            "preset": "conventionalcommits",
+            "output": "CHANGELOG.md"
+        }
+    },
+    "devDependencies": {
+        "conventional-changelog": "^7.1.1",
+        "conventional-changelog-conventionalcommits": "^8.0.0",
+        "release-it": "^18.1.2"
+    }
+}
