@@ -110,6 +110,7 @@
         ```sh
         sudo apt-get install -y dotnet-runtime-10.0
         ```
+- Crear un proyecto: `dotnet new console -n nombreDelProyecto`
 - Contruir con dotnet: `dotnet build`
 
 - **Integrated terminal** with <kbd>Ctrl</kbd> + <kbd>j</kbd>
