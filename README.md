@@ -50,7 +50,10 @@
     - **Linux (Arch Linux)**
         ```sudo pacman -S neovim```
     - **Linux (RHEL/Fedora)**
-      ```sudo dnf install -y neovim python3-neovim```
+      - Descargar la versión .appimage
+      - Dar permisos: ```chmod u+x nvim-linux-x86_64.appimage```
+      - Dar permisos 2: ```chmod u+x nvim-linux-x86_64.appimage && ./nvim-linux-x86_64.appimage```
+      - Mover appimage: ```sudo mv ./nvim-linux-x86_64.appimage /usr/local/bin/nvim```
 
 # Usage
 
