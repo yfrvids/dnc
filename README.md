@@ -16,6 +16,8 @@
     ```sudo apt install pip```
     - **Linux (Arch Linux)**
     ```sudo pacman -S python-pip```
+    - **Linux (RHEL/Fedora)**
+    ```sudo dnf install pip```
 - **Git**
 - **Nodejs**, **Npm**
     - **Windows:** nodejs [website](https://nodejs.org/)
@@ -30,10 +32,12 @@
         nvim install lts/...
         nvm use v<LTSversion>
         ```
+    - **Linux (RHEL/Fedora)**
+      ```sudo dnf install nodejs npm```
 - **Deno**
     - **Windows:**
         - ```irm https://deno.land/install.ps1 | iex``` or check [Deno's Website](https://deno.com/) 
-    - **Linux/Mac:**
+    - **Linux/Mac/RHEL/Fedora:**
         - ```curl -fsSL https://deno.land/install.sh | sh```
 
         - Crear archivo envexport: `touch /home/yourUser/.deno/envexport`
@@ -45,6 +49,8 @@
         <a href="https://github.com/neovim/neovim-releases/releases">https://github.com/neovim/neovim-releases/releases</a>
     - **Linux (Arch Linux)**
         ```sudo pacman -S neovim```
+    - **Linux (RHEL/Fedora)**
+      ```sudo dnf install -y neovim python3-neovim```
 
 # Usage
 
